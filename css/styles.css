@@ -1,0 +1,101 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+
+    --fuente-principal: 3.5rem;
+}
+/*GLOBALES*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /*HACK PARA BOX MODEL*/
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;  /*1rem = 10px*/
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% ); /*Para gradiente en la página*/
+}
+
+h1{
+    font-size: var(--fuente-principal);
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+h2,h3{
+    text-align: left;
+    font-weight: bold;
+}
+/*TITULOS*/
+.titulo span{   /*span = hijo de h1*/
+    font-size: 2rem;
+}
+
+
+/*NAVEGACION PRINCIPAL BARRA*/
+.barra_nav{ /*color de la barra de navegación*/
+    background-color: var(--secundario);
+
+}
+
+.contenedor_nav_bar{  /*Distribución de la barra de navegación*/
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) { 
+    .contenedor_nav_bar{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.contenedor_nav_bar a{ /*Modificación de cada elemento de la barra de navegación*/
+    display: block;
+    text-align: center;   
+    font-weight: bold;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.contenedor_nav_bar a:hover{ /*Cambia el color al poner encima el mouse*/
+    background-color: var(--primario);
+    color: var(--oscuro);
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+footer{
+    text-align: center;
+}
