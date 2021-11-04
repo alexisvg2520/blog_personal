@@ -11,30 +11,42 @@
 </head>  
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-    
-    <!-- Navbar-->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg fixed-top py-3">
-            <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Alexis Vallejo Blog Personal</a>
-                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-                
-                <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Inicio <span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a href="estudios.html" class="nav-link text-uppercase font-weight-bold">Estudios</a></li>
-                        <li class="nav-item"><a href="portafolio.html" class="nav-link text-uppercase font-weight-bold">Portafolio</a></li>
-                        <li class="nav-item"><a href="pasatiempos.html" class="nav-link text-uppercase font-weight-bold">Hobbies</a></li>
-                        <li class="nav-item"><a href="contacto.html" class="nav-link text-uppercase font-weight-bold">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <header>
+        <h1 class= "titulo">Alexis Vallejo
+        <span>Blog Personal</span></h1>     
     </header>
+    <div class='container'>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand" href="#">AV Designer</a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="estudios.html">Estudios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="portafolio.html">Portafolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="pasatiempos.html">Hobbies</a>
+                            </li><li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </div>
+
 
 
     <div class="container">
-        <br>
-        <br>
         <h2>Acerca de mi</h2>
         <div class="descripcion">
             <img src="img/perfil.jpg" height=200>
@@ -47,10 +59,13 @@
 
     </div>
 
-    <div class="container">
+
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
-            <span class="text-muted">© 2021 Alexis Vallejo</span>
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="text-muted">© 2021 Alexis Vallejo</span>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
@@ -60,7 +75,7 @@
             <li class="ms-3"><a class="text-muted" href="https://twitter.com/alexisvg2520" target="_blank"><svg class="bi" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg></a></li>
         </ul>
     </footer>
-    </div>
+
 
 </body>  
 </html>
