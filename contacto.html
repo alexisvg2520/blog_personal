@@ -48,66 +48,67 @@
     
 
     <main class="container shadow p-3 mb-4 bg-body rounded">
-        <div class="ubicacion">
-            <h2>Dónde ubicarme</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7629290205964!2d-78.48407505033437!3d-0.3019134354268675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a2ae115b9e3d%3A0x0!2zMMKwMTgnMDYuOSJTIDc4wrAyOCc1NC44Ilc!5e0!3m2!1ses!2sec!4v1635080338830!5m2!1ses!2sec" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><br>
-        </div>
-        <hr>
-        <div class="contacto">
-            <h2>Contacto</h2>
-            <form method="POST" action="mailto: ecuaalejo2003@hotmail.es">
-                <fieldset>
-                    <legend>Contáctame llenando todos los campos</legend>
-                    <div>
-                            <label for="name">Nombres</label>
-                            <input type="text" id="name" name="name" placeholder="Nombre y Apellido" required>
-                    </div>
-                    <div>
-                            <label>Teléfono</label>
-                            <input type="tel" id ="phone" name="phone" placeholder="0999999999" 
-                            pattern="[0]{1}[9]{1}[0-9]{1}[0-9]{3}[0-9]{4}" required>
-                    </div>
-                    
-                    <div>
-                            <label>Correo</label>
-                            <input type="email" id="email" name="email" placeholder="Mail" required>
-                    </div>
+        <div class="row p-4">
+            <div class="col-sm mb-4">
+                <h5 class="p-2 mb-3 bg-secondary bg-gradient rounded text-white">Contacto</h5>
+                <form method="POST" action="mailto: ecuaalejo2003@hotmail.es">
+                    <fieldset>
+                        <div>
+                                <label for="name">Nombres</label>
+                                <input type="text" id="name" name="name" placeholder="Nombre y Apellido" required>
+                        </div>
+                        <div>
+                                <label>Teléfono</label>
+                                <input type="tel" id ="phone" name="phone" placeholder="0999999999" 
+                                pattern="[0]{1}[9]{1}[0-9]{1}[0-9]{3}[0-9]{4}" required>
+                        </div>
+                        
+                        <div>
+                                <label>Correo</label>
+                                <input type="email" id="email" name="email" placeholder="Mail" required>
+                        </div>
 
-                    <div>
-                            <br><label>Servicio que requiere</label>
-                            <input list="serv" name="serv" required>
-                            <datalist id="serv">
-                                <option value="Diseño página Web">
-                                <option value="Auditoría Informática">
-                                <option value="Aplicaciones Android e iOS">
-                                <option value="Arreglo y Mantenimiento de CPU">
-                                <option value="Arreglo y Mantenimiento de celulares">
-                            </datalist>
-                    </div>
+                        <div>
+                                <br><label>Servicio que requiere</label>
+                                <input list="serv" name="serv" required>
+                                <datalist id="serv">
+                                    <option value="Diseño página Web">
+                                    <option value="Auditoría Informática">
+                                    <option value="Aplicaciones Android e iOS">
+                                    <option value="Arreglo y Mantenimiento de CPU">
+                                    <option value="Arreglo y Mantenimiento de celulares">
+                                </datalist>
+                        </div>
 
-                    <div>
-                            <br>
-                            <label>Sector al que pertenece</label><br>
-                            <input type="radio" id="pub" name="sector" value="Público">
-                            <label for="html">Público</label><br>
-                            <input type="radio" id="priv" name="sector" value="Privado">
-                            <label for="css">Privado</label><br>
+                        <div>
+                                <br>
+                                <label>Sector al que pertenece</label><br>
+                                <input type="radio" id="pub" name="sector" value="Público">
+                                <label for="html">Público</label><br>
+                                <input type="radio" id="priv" name="sector" value="Privado">
+                                <label for="css">Privado</label><br>
 
-                    </div>
+                        </div>
 
-                    <div>
-                            <br>
-                            <label for="msg">Mensaje</label><br>
-                            <textarea id="msg" name="user_message" cols="40" rows="5" style="resize: none;" placeholder="Escriba aquí su mensaje"></textarea>
-                    </div>
+                        <div>
+                                <br>
+                                <label for="msg">Mensaje</label><br>
+                                <textarea id="msg" name="user_message" cols="40" rows="5" style="resize: none;" placeholder="Escriba aquí su mensaje"></textarea>
+                        </div>
 
-                    <div>
-                            <input type="submit" onclick="alert('Envío de  Datos exitoso')" value="Enviar">
-                            <input type="reset" value="Restablecer">
-                    </div>
-                </fieldset> 
-            </form>
+                        <div>
+                                <input type="submit" onclick="alert('Envío de  Datos exitoso')" value="Enviar">
+                                <input type="reset" value="Restablecer">
+                        </div>
+                    </fieldset> 
+                </form>
+            </div>
+
+            <div class="col-sm">
+                <h5 class="p-2 mb-3 bg-secondary bg-gradient rounded text-white">Ubicación</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7629290205964!2d-78.48407505033437!3d-0.3019134354268675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a2ae115b9e3d%3A0x0!2zMMKwMTgnMDYuOSJTIDc4wrAyOCc1NC44Ilc!5e0!3m2!1ses!2sec!4v1635080338830!5m2!1ses!2sec" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="rounded"></iframe><br>
+            </div>
         </div>
     </main>
 
