@@ -44,23 +44,28 @@
             </nav>
     </div>     
 
-    <main class="container shadow p-3 mb-4 bg-body rounded">
-        <h2>Hobbies</h2>
-        <section class="audio">
-            <audio autoplay controls loop src="music/music1.mp3"></audio>
-        </section>
+    <div class="container shadow p-3 mb-4 bg-body rounded">
+        <div class="p-2 row mb-3 bg-secondary bg-gradient rounded text-white">
+            <div class="col-sm"><h3>Hobbies</h3></div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+            <section class="col-sm audio">
+                <audio autoplay controls loop style="width: 200px;height: 35px;" src="music/music1.mp3"></audio>
+            </section>
+        </div>
         <section class="hobbie img">
-            <br><hr>
+ 
             <a name="inicio"></a>
             <h3>Haz clic en cada uno de los cuadros que más llame tu atención...</h3>
             <div class="img">
                 <map name="workmap">
-                    <area shape="rect" coords="56,236,126,324" alt="arte" href="#arte">
-                    <area shape="rect" coords="157,155,246,226" alt="liderazgo" href="#liderazgo">
-                    <area shape="rect" coords="272,81,383,225" alt="viaje" href="#viaje">
-                    <area shape="rect" coords="391,185,540,300" alt="deporte" href="#deporte">
-                    <area shape="rect" coords="158,281,329,424" alt="tec" href="#tec">
-                    <area shape="rect" coords="342,320,418,408" alt="cuatro" href="#cuatro">
+                    <area shape="rect" coords="56,236,126,324" alt="arte" href="#arte" title="Música, Arte y Cine" data-bs-toggle="popover" data-bs-trigger="hover focus">
+                    <area shape="rect" coords="157,155,246,226" alt="liderazgo" href="#liderazgo" title="Voluntariado" data-bs-toggle="popover" data-bs-trigger="hover focus">
+                    <area shape="rect" coords="272,81,383,225" alt="viaje" href="#viaje" title="Mochileando" data-bs-toggle="popover" data-bs-trigger="hover focus">
+                    <area shape="rect" coords="391,185,540,300" alt="deporte" href="#deporte" title="Deportes" data-bs-toggle="popover" data-bs-trigger="hover focus">
+                    <area shape="rect" coords="158,281,329,424" alt="tec" href="#tec" title="Tecnología y Gamming" data-bs-toggle="popover" data-bs-trigger="hover focus">
+                    <area shape="rect" coords="342,320,418,408" alt="cuatro" href="#cuatro" title="4x4" data-bs-toggle="popover" data-bs-trigger="hover focus">
                 </map>
                 <img src="img/hobbie_1.png"  usemap="#workmap">
                 
@@ -172,7 +177,8 @@
             </div>
         </section>
 
-    </main>
+
+    </div>
 
     <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -207,5 +213,11 @@
                 </ul>
             </footer>
         </div>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
 </body>  
 </html>
