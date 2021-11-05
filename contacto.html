@@ -51,54 +51,60 @@
         <div class="row p-4">
             <div class="col-sm mb-4">
                 <h5 class="p-2 mb-3 bg-secondary bg-gradient rounded text-white">Contacto</h5>
-                <form method="POST" action="mailto: ecuaalejo2003@hotmail.es">
+                <form method="POST" action="mailto: ecuaalejo2003@hotmail.es" class="row g-2">
                     <fieldset>
-                        <div>
-                                <label for="name">Nombres</label>
-                                <input type="text" id="name" name="name" placeholder="Nombre y Apellido" required>
+                        <div class= "col-md form-floating mb-3">
+                                <input class="form-control" type="text" id="floatingInputValue" name="name" placeholder="Nombre y Apellido" required>
+                                <label for="floatingInputValue">Nombres</label>
                         </div>
-                        <div>
-                                <label>Teléfono</label>
-                                <input type="tel" id ="phone" name="phone" placeholder="0999999999" 
+                        <div class= "col-md form-floating mb-3">
+                                <input class="form-control" type="tel" id ="floatingInputValue" name="phone" placeholder="0999999999" 
                                 pattern="[0]{1}[9]{1}[0-9]{1}[0-9]{3}[0-9]{4}" required>
+                                <label class="form-label" for="floatingInputValue">Teléfono</label>
+                                
                         </div>
                         
-                        <div>
-                                <label>Correo</label>
-                                <input type="email" id="email" name="email" placeholder="Mail" required>
+                        <div class= "col-md form-floating mb-3">
+                                <input class="form-control" type="email" id="floatingInputValue" name="email" placeholder="Mail" required>
+                                <label class="form-label" for="floatingInputValue">Correo</label>
                         </div>
 
-                        <div>
-                                <br><label>Servicio que requiere</label>
-                                <input list="serv" name="serv" required>
-                                <datalist id="serv">
-                                    <option value="Diseño página Web">
-                                    <option value="Auditoría Informática">
-                                    <option value="Aplicaciones Android e iOS">
-                                    <option value="Arreglo y Mantenimiento de CPU">
-                                    <option value="Arreglo y Mantenimiento de celulares">
-                                </datalist>
+                        <div class= "col-md form-floating mb-3">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" required>
+                                    <option selected>Escoger servicio requerido</option>
+                                    <option value="1">Diseño página Web</option>
+                                    <option value="2">Auditoría Informática</option>
+                                    <option value="3">Aplicaciones Android e iOS</option>
+                                    <option value="4">Arreglo y Mantenimiento de CPU</option>
+                                    <option value="5">Arreglo y Mantenimiento de celulares</option>
+                                </select>
+                                <label for="floatingSelect">Servicios</label>
                         </div>
 
-                        <div>
-                                <br>
+                        <div class= "col-md mb-3">
                                 <label>Sector al que pertenece</label><br>
-                                <input type="radio" id="pub" name="sector" value="Público">
-                                <label for="html">Público</label><br>
-                                <input type="radio" id="priv" name="sector" value="Privado">
-                                <label for="css">Privado</label><br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Privado
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Público
+                                    </label>
+                                </div>
+                        </div>
 
+                        <div class="col-md form-floating mb-3">
+                                <textarea class="form-control" id="floatingTextarea2" name="user_message" style="resize: none;height: 100px;" placeholder="Escriba aquí su mensaje"></textarea>
+                                <label for="floatingTextarea2">Mensaje</label>
                         </div>
 
                         <div>
-                                <br>
-                                <label for="msg">Mensaje</label><br>
-                                <textarea id="msg" name="user_message" cols="40" rows="5" style="resize: none;" placeholder="Escriba aquí su mensaje"></textarea>
-                        </div>
-
-                        <div>
-                                <input type="submit" onclick="alert('Envío de  Datos exitoso')" value="Enviar">
-                                <input type="reset" value="Restablecer">
+                                <input type="submit" class="btn btn-outline-dark" value="Enviar">
+                                <input type="reset" class="btn btn-outline-danger" value="Restablecer">
                         </div>
                     </fieldset> 
                 </form>
@@ -115,12 +121,12 @@
     <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <div class="col-md-4 d-flex align-items-center">
-                <a href="index.html" class="mb-md-0 text-muted text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24"viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/> 
-                        <path d="M11 14l4 6h6l-9 -16l-9 16h6l4 -6" /></svg>
-                </a>
-                <span class="text-muted">© 2021 Alexis Vallejo</span>
+                    <a href="index.html" class="mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24"viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/> 
+                            <path d="M11 14l4 6h6l-9 -16l-9 16h6l4 -6" /></svg>
+                    </a>
+                    <span class="text-muted">© 2021 Alexis Vallejo</span>
                 </div>
 
                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
